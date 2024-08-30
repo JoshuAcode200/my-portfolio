@@ -28,22 +28,22 @@ const Hero = () => {
           </div>
           <div className="flex flex-row pt-10 gap-14">   
             <div className="flex">
-              <button className="btn">
+              <a href='/my-cv.pdf' download='my-cv.pdf' className="btn">
                 DOWNLOAD CV
                 <i className="fa-solid fa-cloud-arrow-down"></i> 
-              </button>
+              </a>
             </div>
             <div className="flex justify-center pt-2 md:justify-start space-x-4">
-              <a href="#" className="hover:text-green-700">
-                <i className="fab fa-facebook-f text-2xl"></i> {/* Adjust size with text-2xl, text-3xl, etc. */}
+              <a href="https://github.com/JoshuAcode200" className="hover:text-green-700">
+              <i class="fa-brands fa-github text-2xl"></i> 
               </a>
               <a href="#" className="hover:text-green-700">
                 <i className="fab fa-twitter text-2xl"></i>
               </a>
-              <a href="#" className="hover:text-green-700">
+              <a href="https://www.instagram.com/__joshu.a/" className="hover:text-green-700">
                 <i className="fab fa-instagram text-2xl"></i>
               </a>
-              <a href="#" className="hover:text-green-700">
+              <a href="https://www.linkedin.com/in/joshua-ayamba-b88329214/" className="hover:text-green-700">
                 <i className="fab fa-linkedin-in text-2xl"></i>
               </a>
             </div>
@@ -51,9 +51,10 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className='flex'>
-        <img src={image1} alt='' className='rounded-full border-4 border-green-700 h-[18rem] w-[18rem] object-fill'/>
-      </div>  
+      <div className='flex justify-center items-center h-[18rem] w-[18rem]'>
+        <div className='absolute rounded-full border-4 border-dashed border-green-700 h-[18rem] w-[18rem] hover:animate-spin-continuous'></div>
+        <img src={image1} alt='' className='rounded-full h-[16rem] w-[16rem] object-fill'/>
+      </div>
     </section>
    );
 }

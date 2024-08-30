@@ -27,3 +27,26 @@
   @apply rounded-full py-2 px-3 cursor-pointer text-green-700 text-lg border-2 border-green-700 font-bold uppercase tracking-wider hover:text-white hover:border-white hover:border-2 hover:bg-green-700;
 }
 
+@keyframes spin-continuous {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.hover\:animate-spin-continuous:hover {
+  animation: spin-continuous 2s linear infinite;
+}
+
+@keyframes pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
