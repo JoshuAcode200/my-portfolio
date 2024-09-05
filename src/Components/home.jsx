@@ -1,4 +1,9 @@
 import Hero from "./hero";
+import About from "./about";
+import Experience from "./experience";
+import Skills from "./skill";
+import Projects from "./projects";
+import Footer from "./footer";
 import { useEffect, useState } from "react";
 
 const Home = () => {
@@ -63,6 +68,22 @@ const Home = () => {
           </p>
         </div>
       </div>
+      <div className="about">
+        <About />
+      </div>
+      <div className="exp">
+        <Experience />
+      </div>
+      <div className="skills">
+        <Skills />
+      </div>
+      <div className="projects">
+        <Projects />
+      </div>
+      <div className="footer">
+        <Footer />
+      </div>
+
     </div>
   );
 };
